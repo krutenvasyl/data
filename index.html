@@ -4,37 +4,54 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="/js/jquery.canvasjs.min.js"></script>
-  <script src="/js/global.js"></script>
+  <script src="./js/jquery.canvasjs.min.js"></script>
+  <script src="./js/global.js"></script>
 </head>
 <body>
   <header>
 
   </header>
   <div class="container">
-    <div class="form-group margin-top5p">
-      <label for="banks_names">Select Bank</label>
-      <select name="banks_names" class="form-control bank_id" id="bank_id">
-        <option value="">name</option>
-        <option value="2000007">AFK Mikrofinanca demo</option>
-        <option value="2000009">AlexBank demo</option>
-        <option value="2000014">Garanti Leasing demo</option>
-        <option value="2000015">Tunisie Leasing demo</option>
-        <option value="2000017">Kreditimi Rural i Kosoves demo</option>
-        <option value="2000019">Banka per Biznes demo</option>
-        <option value="2000028">Halkbank a.d. Beograd DEMO</option>
-        <option value="2000031">Vitas Palestine DEMO</option>
-        <option value="2000032">Global Leasing Company DEMO</option>
-        <option value="2000037">Banque Du Caire DEMO</option>
-        <option value="2000045">MKF Sunrise DEMO</option>
-        <option value="2000053">Mi Bospo DEMO</option>
-      </select>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group margin-top5p">
+            <label for="bank_id">Select Bank</label>
+            <select name="banks_names" class="form-control bank_id" id="bank_id">
+              <option value="">name</option>
+              <option value="2000007">AFK Mikrofinanca demo</option>
+              <option value="2000009">AlexBank demo</option>
+              <option value="2000014">Garanti Leasing demo</option>
+              <option value="2000015">Tunisie Leasing demo</option>
+              <option value="2000017">Kreditimi Rural i Kosoves demo</option>
+              <option value="2000019">Banka per Biznes demo</option>
+              <option value="2000028">Halkbank a.d. Beograd DEMO</option>
+              <option value="2000031">Vitas Palestine DEMO</option>
+              <option value="2000032">Global Leasing Company DEMO</option>
+              <option value="2000037">Banque Du Caire DEMO</option>
+              <option value="2000045">MKF Sunrise DEMO</option>
+              <option value="2000053">Mi Bospo DEMO</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group margin-top5p axis-option">
+            <label for="bank_id">Select X axis option</label>
+            <select name="axis-option" class="form-control" id="axis-option">
+              <option value="">------</option>
+              <option value="time">Time</option>
+              <option value="loan-amount">Loan amount</option>
+              <option value="investment-costs">Investment costs</option>
+            </select>
+          </div>
+        </div>
     </div>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;" class="margin-bot5p"></div>
   </div>
-<output></output>
+
   <footer>
 
   </footer>

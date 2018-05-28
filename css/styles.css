@@ -1,3 +1,9 @@
 .margin-top5p{
   margin-top: 5%;
 }
+.margin-bot5p{
+  margin-bottom: 5%;
+}
+.axis-option{
+  display: none;
+}
